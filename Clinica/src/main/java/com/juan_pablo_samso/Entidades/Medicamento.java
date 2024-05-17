@@ -6,13 +6,15 @@ public class Medicamento {
 
     private int medicamento_id;
     private String nombre;
+    private int cantidad;
 
     public Medicamento() {
     }
 
-    public Medicamento(String nombre, int medicamento_id) {
+    public Medicamento(String nombre, int medicamento_id, int cantidad) {
         this.nombre = nombre;
         this.medicamento_id = medicamento_id;
+        this.cantidad = cantidad;
     }
 
     public int getMedicamento_id() {
@@ -29,5 +31,13 @@ public class Medicamento {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }
